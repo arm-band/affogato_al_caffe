@@ -1,0 +1,30 @@
+body {
+    position: relative;
+    background-color:white;
+    height: 300vh;
+}
+.scrollTop {
+    position: fixed;
+    opacity: 0;
+    right: 20px;
+    bottom: 20px;
+    z-index: 100;
+    width: 40px;
+    height: 40px;
+    border: none;
+    color: brown;
+    background-color: #c0ffee;
+    font-size: 20px;
+    line-height: 2;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+.scrollTop.show {
+    pointer-events: auto;
+    opacity: 1;
+}
+.scrollTop:active, .scrollTop:hover, .scrollTop:focus {
+    background-color: #c0ffee;
+}
